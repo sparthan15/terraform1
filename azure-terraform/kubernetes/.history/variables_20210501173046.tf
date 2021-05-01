@@ -21,9 +21,9 @@ variable dns_prefix {
 }
 
 variable cluster_name {
-  default = "carlosgamboaprueba"
+  default = "k8sAforo255test"
 }
 
 variable resource_group {
-  default = "kubernetescgamboa"
+  default = "kubernetesAforo255"
 }
