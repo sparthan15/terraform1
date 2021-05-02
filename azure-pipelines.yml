@@ -29,19 +29,12 @@ steps:
     commandOptions: '-var client_id=$(client_id) -var client_secret=$(client_secret) -var ssh_public_key=$(publickey.secureFilePath)'
     backendType: 'azurerm'
     backendServiceArm: 'prueba service conection'
-    ensureBackend: true
     backendAzureRmResourceGroupName: 'terraform-backend-cg'
     backendAzureRmResourceGroupLocation: 'westeurope'
     backendAzureRmStorageAccountName: 'sotarageacctcarlosxx'
     backendAzureRmContainerName: 'sotarageacctcarlosxxcontainer'
     backendAzureRmKey: 'kubernets-dev.tfstate'
     allowTelemetryCollection: true
-    backendType: 'azurerm'
     backendServiceArm: 'prueba service conection'
     ensureBackend: true
-    backendAzureRmResourceGroupName: 'terraform-backend-cg'
-    backendAzureRmResourceGroupLocation: 'westeurope'
-    backendAzureRmStorageAccountName: 'sotarageacctcarlosxx'
-    backendAzureRmContainerName: 'sotarageacctcarlosxxcontainer'
-    backendAzureRmKey: 'kubernets-dev.tfstate'
-    allowTelemetryCollection: true
+    
