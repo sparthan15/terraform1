@@ -16,3 +16,16 @@ steps:
 - script: |
     echo Add other tasks to build, test, and deploy your project.
   displayName: 'Run a multi-line script'
+- task: TerraformCLI@0
+  inputs:
+    command: 'init'
+    workingDirectory: '$(System.DefaultWorkingDirectory)/azure-terraform/kubernetes'
+    backendType: 'azurerm'
+    backendServiceArm: 'prueba service conection'
+    ensureBackend: true
+    backendAzureRmResourceGroupName: 'terraform-backend-cg'
+    backendAzureRmResourceGroupLocation: 'westeurope'
+    backendAzureRmStorageAccountName: 'sotarageacctcarlosxx'
+    backendAzureRmContainerName: 'sotarageacctcarlosxxcontainer'
+    backendAzureRmKey: 'kubernets-dev.tfstate'
+    allowTelemetryCollection: true
