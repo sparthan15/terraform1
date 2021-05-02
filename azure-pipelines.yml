@@ -35,6 +35,5 @@ steps:
     backendAzureRmContainerName: 'sotarageacctcarlosxxcontainer'
     backendAzureRmKey: 'kubernets-dev.tfstate'
     allowTelemetryCollection: true
-    backendServiceArm: 'prueba service conection'
     ensureBackend: true
     
